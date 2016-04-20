@@ -1,0 +1,30 @@
+<div class="navbar">
+    <div class="navbar-inner">
+            <ul class="nav pull-right">
+                <li>
+                    <a href="#" role="button">
+                        <i class="icon-user"></i> admin
+                    </a>
+                </li>
+                <li><a href="logout.php" class="hidden-phone visible-tablet visible-desktop" role="button">Logout</a></li>
+            </ul>
+            <a class="brand" href="index.html"><span class="first">Blog</span> <span class="second">Admin</span></a>
+    </div>
+</div>
+<div class="sidebar-nav">
+    <a href="#dashboard-menu" class="nav-header" data-toggle="collapse"><i class="icon-dashboard"></i>控制面板</a>
+    <ul id="dashboard-menu" class="nav nav-list collapse in">
+        <li><a href="{:U('admin/index/index')}">首页</a></li>
+        <li ><a href="{:U('admin/product/productlist')}">产品管理</a></li>
+        <li ><a href="li">导航管理</a></li>
+    </ul>
+</div>
+{__CONTENT__}
+
+    <script src="/Public/admin/lib/bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript">
+        $("[rel=tooltip]").tooltip();
+        $(function() {
+            $('.demo-cancel-click').click(function(){return false;});
+        });
+    </script>

@@ -1,4 +1,28 @@
-<?php if (!defined('THINK_PATH')) exit();?><!doctype html>
+<?php if (!defined('THINK_PATH')) exit();?>	<a href="#0" class="cd-top">Top</a>
+	<div class="header">
+		<div class="header_mid">
+			<div class="logo fl"><img src="/Public/Images/logo.jpg"/></div>
+			<div class="header_r fr pr">
+			<span class="c-f f-12 mt-10 t-r fr">全国服务热线：020-84130064 / 400-678-5751</span>
+			<ul class="nav fr pa">
+				<li><a href="<?php echo U('home/index/index');?>" class="language-tg" data-title="HOME">首页</a></li>
+				<li><a href="<?php echo U('home/company/Introduction');?>" class="language-tg" data-title="ABOUT ROME">关于我们</a></li>
+				<li><a href="<?php echo U('home/product/product');?>" class="language-tg" data-title="BRAND">品牌</a></li>
+				<li><a href="<?php echo U('home/company/news');?>" class="language-tg" data-title="NEWS">公司新闻</a></li>
+				<li><a href="<?php echo U('home/product/productMain');?>" class="language-tg" data-title="PRODUCTS">产品展示</a></li>
+				<li><a href="<?php echo U('home/index/jointo');?>" class="language-tg" data-title="MERCHANTS JOIN">商家入驻</a></li>
+				<li><a href="#" class="language-tg" data-title="R.H.A">家居艺术院R.H.A </a></li>
+				<li><a href="#" class="language-tg" data-title="CONTACT US">联系我们</a></li>
+			</ul>
+			</div>	
+		</div>
+	</div>
+<div class="banner1">
+	<div class="ban_mid">
+	<img src="/Public/Images/banner1.jpg" alt="" style="width:1000px;">
+	</div>
+</div>
+<!doctype html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -21,30 +45,6 @@
 	</script>
 </head>
 <body>
-		<a href="#0" class="cd-top">Top</a>
-	<div class="header">
-		<div class="header_mid">
-			<div class="logo fl"><img src="/Public/Images/logo.jpg"/></div>
-			<div class="header_r fr pr">
-			<span class="c-f f-12 mt-10 t-r fr">全国服务热线：020-84130064 / 400-678-5751</span>
-			<ul class="nav fr pa">
-				<li><a href="index.html" class="language-tg" data-title="HOME">首页</a></li>
-				<li><a href="Introduction.html" class="language-tg" data-title="ABOUT ROME">关于我们</a></li>
-				<li><a href="product.html" class="language-tg" data-title="BRAND">品牌</a></li>
-				<li><a href="news.html" class="language-tg" data-title="NEWS">公司新闻</a></li>
-				<li><a href="productMain.html" class="language-tg" data-title="PRODUCTS">产品展示</a></li>
-				<li><a href="jointo.html" class="language-tg" data-title="MERCHANTS JOIN">商家入驻</a></li>
-				<li><a href="#" class="language-tg" data-title="R.H.A">家居艺术院R.H.A </a></li>
-				<li><a href="#" class="language-tg" data-title="CONTACT US">联系我们</a></li>
-			</ul>
-			</div>	
-		</div>
-	</div>
-	<div class="banner1">
-	<div class="ban_mid">
-	<img src="/Public/Images/banner1.jpg" alt="" style="width:1000px;">
-	</div>
-</div>
 	<div class="con_mid w1000 clear">
 
 			<div class="tt">
@@ -121,6 +121,8 @@
 </div>
 
 <div class="clearxd"></div>
+</body>
+</html>
 <div class="footer">
 		<div class="foot">
          <div class="foot1 foot1_border layout2">
@@ -186,5 +188,3 @@
 			<p class="t-c ">粤ICP备120860000号     Copyright © 2015 罗马国际 All Rights Reserved  </p>
 		</div>
     <link href="/Public/css/lrtk.css" rel="stylesheet" type="text/css" />
-</body>
-</html>

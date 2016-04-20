@@ -1,3 +1,4 @@
+	<?php $navArr = M("category")->where("fid=0")->select(); ?>
 	<a href="#0" class="cd-top">Top</a>
 	<div class="header">
 		<div class="header_mid">
@@ -5,14 +6,9 @@
 			<div class="header_r fr pr">
 			<span class="c-f f-12 mt-10 t-r fr">全国服务热线：020-84130064 / 400-678-5751</span>
 			<ul class="nav fr pa">
-				<li><a href="index.html" class="language-tg" data-title="HOME">首页</a></li>
-				<li><a href="Introduction.html" class="language-tg" data-title="ABOUT ROME">关于我们</a></li>
-				<li><a href="product.html" class="language-tg" data-title="BRAND">品牌</a></li>
-				<li><a href="news.html" class="language-tg" data-title="NEWS">公司新闻</a></li>
-				<li><a href="productMain.html" class="language-tg" data-title="PRODUCTS">产品展示</a></li>
-				<li><a href="jointo.html" class="language-tg" data-title="MERCHANTS JOIN">商家入驻</a></li>
-				<li><a href="#" class="language-tg" data-title="R.H.A">家居艺术院R.H.A </a></li>
-				<li><a href="#" class="language-tg" data-title="CONTACT US">联系我们</a></li>
+				<volist name='navArr' id='v'>
+				<li><a href="{:U($v['url'])}" class="language-tg" data-title="{$v[ename]}">{$v[name]}</a></li>
+				</volist>
 			</ul>
 			</div>	
 		</div>

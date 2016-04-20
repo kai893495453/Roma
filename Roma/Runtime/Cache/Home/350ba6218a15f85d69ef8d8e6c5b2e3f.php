@@ -1,4 +1,22 @@
-<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php if (!defined('THINK_PATH')) exit();?>	<?php $navArr = M("category")->where("fid=0")->select(); ?>
+	<a href="#0" class="cd-top">Top</a>
+	<div class="header">
+		<div class="header_mid">
+			<div class="logo fl"><img src="/Public/Images/logo.jpg"/></div>
+			<div class="header_r fr pr">
+			<span class="c-f f-12 mt-10 t-r fr">全国服务热线：020-84130064 / 400-678-5751</span>
+			<ul class="nav fr pa">
+				<?php if(is_array($navArr)): $i = 0; $__LIST__ = $navArr;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><li><a href="<?php echo U($v['url']);?>" class="language-tg" data-title="<?php echo ($v[ename]); ?>"><?php echo ($v[name]); ?></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
+			</ul>
+			</div>	
+		</div>
+	</div>
+<div class="banner1">
+	<div class="ban_mid">
+	<img src="/Public/Images/banner1.jpg" alt="" style="width:1000px;">
+	</div>
+</div>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -19,25 +37,6 @@
 	</script>
 </head>
 <body>
-		<a href="#0" class="cd-top">Top</a>
-	<div class="header">
-		<div class="header_mid">
-			<div class="logo fl"><img src="/Public/Images/logo.jpg"/></div>
-			<div class="header_r fr pr">
-			<span class="c-f f-12 mt-10 t-r fr">全国服务热线：020-84130064 / 400-678-5751</span>
-			<ul class="nav fr pa">
-				<li><a href="index.html" class="language-tg" data-title="HOME">首页</a></li>
-				<li><a href="Introduction.html" class="language-tg" data-title="ABOUT ROME">关于我们</a></li>
-				<li><a href="product.html" class="language-tg" data-title="BRAND">品牌</a></li>
-				<li><a href="news.html" class="language-tg" data-title="NEWS">公司新闻</a></li>
-				<li><a href="productMain.html" class="language-tg" data-title="PRODUCTS">产品展示</a></li>
-				<li><a href="jointo.html" class="language-tg" data-title="MERCHANTS JOIN">商家入驻</a></li>
-				<li><a href="#" class="language-tg" data-title="R.H.A">家居艺术院R.H.A </a></li>
-				<li><a href="#" class="language-tg" data-title="CONTACT US">联系我们</a></li>
-			</ul>
-			</div>	
-		</div>
-	</div>
 <!-- 	banner -->
 	 <div class="index-lun">
 	 	<ul class="rslides" id="slider3">
@@ -182,3 +181,68 @@
     <link href="/Public/css/lrtk.css" rel="stylesheet" type="text/css" />
 </body>
 </html>
+<div class="footer">
+		<div class="foot">
+         <div class="foot1 foot1_border layout2">
+         	<ul class="clear oh">
+            	<li>
+                	<div class="foot1_s">
+                        <b> <a href="#">品牌故事 | BRAND</a></b>
+                        <ul class="fl">
+                            <li><a href="#">关于品牌</a></li>
+                            <li><a href="#">获得荣誉</a></li>
+                            <li><a href="#">新闻动态</a></li>
+                            <li><a href="#">联系我们</a></li>
+                        </ul>
+                	</div>
+                </li>
+                <li>
+                	<div class="foot1_s">
+                        <b> <a href="#">公司新闻 | NEWS CENTER</a></b>
+                        <ul>
+                            <li><a href="#">网上商城</a></li>
+                            <li><a href="#">维修网点</a></li>
+                            <li><a href="#">软件升级</a></li>
+                            <li><a href="#">产品使用</a></li>
+                        </ul>
+                	</div>
+                </li>
+                <li>
+                	<div class="foot1_s">
+                        <b> <a href="#">产品展示 | PRODUCT</a></b>
+                        <ul>
+                            <li><a href="#">招商加盟</a></li>
+                            <li><a href="#">产品合作</a></li>
+                            <li><a href="#">资源合作</a></li>
+                        </ul>
+                	</div>
+                </li>
+                <li>
+                	<div class="foot1_s">
+                        <b> <a href="#">招商加盟 | CONTACT US </a></b>
+                        <ul>
+                            <li><a href="#">新浪微博</a></li>
+                            <li><a href="#">腾讯微博</a></li>
+                            <li><a href="#">官方微信</a></li>
+                            
+                        </ul>
+                	</div>
+                </li>
+                 <li>
+                	<div class="foot1_s" style="background: none;">
+                        <b> <a href="#">招商加盟 | CONTACT US </a></b>
+                        <ul>
+                            <li><a href="#">新浪微博</a></li>
+                            <li><a href="#">腾讯微博</a></li>
+                            <li><a href="#">官方微信</a></li>
+                        </ul>
+                	</div>
+                </li>
+            </ul>
+        </div>
+		</div>
+		</div>
+		<div class="foot2">
+			<p class="t-c ">粤ICP备120860000号     Copyright © 2015 罗马国际 All Rights Reserved  </p>
+		</div>
+    <link href="/Public/css/lrtk.css" rel="stylesheet" type="text/css" />
